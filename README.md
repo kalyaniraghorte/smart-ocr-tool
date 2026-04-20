@@ -11,6 +11,18 @@ A Python-based desktop application that extracts text from images, PDFs, DOCX, a
 * Copy extracted text
 * Save text to file
 
+## Unique Feature: Smart Resume Playback
+
+The application implements sentence-level tracking for text-to-speech playback.
+
+- Text is split into sentences using punctuation boundaries
+- Each sentence is processed and spoken individually
+- The system maintains the current sentence index during playback
+- On stopping, the index is preserved
+- On resume, playback continues from the saved position
+
+This allows accurate resume functionality instead of restarting the entire text.
+
 ## Installation
 
 ### 1. Install Tesseract OCR
